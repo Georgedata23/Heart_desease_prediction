@@ -72,7 +72,7 @@ a.append(act)
 
 
 def load():
-    with open('C:/Users/0727G/Desktop/стримлит/heart_desease_model.pcl', 'rb') as fid:
+    with open('heart_desease_model.pcl', 'rb') as fid:
         return pickle.load(fid)
 
 
