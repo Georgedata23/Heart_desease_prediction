@@ -72,7 +72,7 @@ a.append(act)
 
 
 def load():
-    with open('/app/heart_desease_prediction/heart_desease_model.pcl', 'rb') as fid:
+    with open('georgedata23/heart_desease_prediction/master/heart_desease_model.pcl', 'rb') as fid:
         return pickle.load(fid)
 
 
