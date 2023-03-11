@@ -1,3 +1,5 @@
+pip install -r requirments.txt
+
 import pickle
 import streamlit as st
 
