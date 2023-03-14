@@ -1,3 +1,4 @@
+import scikit-learn as sklearn
 import pickle
 import streamlit as st
 import os
