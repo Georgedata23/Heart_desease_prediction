@@ -1,5 +1,5 @@
 
-import scikit_learn
+from sklearn import predict_proba
 import pickle
 import streamlit as st
 
