@@ -1,3 +1,5 @@
+pip install sklearn
+
 import pickle
 import sklearn
 import streamlit as st
