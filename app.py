@@ -1,7 +1,6 @@
 
 from pickle import load
 import streamlit as st
-import sklearn
 
 
 
