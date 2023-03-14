@@ -1,6 +1,6 @@
 
-from sklearn import predict_proba
-import pickle
+
+from pickle import load
 import streamlit as st
 
 
