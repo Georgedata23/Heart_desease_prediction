@@ -1,4 +1,4 @@
-/home/appuser/venv/bin/python pip install -r requirments.txt
+pip install -r requirments.txt
 from pickle import load
 import streamlit as st
 
