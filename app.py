@@ -54,7 +54,7 @@ else:
 
 
 def loading():
-    with open('./heart_desease_model.pcl', 'rb') as fid:
+    with open("./heart_desease_model.pcl", "rb") as fid:
         return pickle.load(fid)
 
 model = loading()
