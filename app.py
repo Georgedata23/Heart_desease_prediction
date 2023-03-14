@@ -18,8 +18,6 @@ smoke = st.checkbox('Отметьте, если курите', key='курит')
 alco = st.checkbox('Отметьте, если употребляете алкоголь', key='выпивает')
 active = st.checkbox('Отметьте, если ведете активный образ жизни', key='физкультурник')
 
-st.write(height, weight, ap_lo,ap_hi, male, gluc, chol, smoke, alco, active)
-
 if male == 'мужской':
     gender = 2
 else:
@@ -55,28 +53,11 @@ else:
     act = 0
 
 
-
-a = []
-a.append(age)
-a.append(gender)
-a.append(height)
-a.append(weight)
-a.append(ap_hi)
-a.append(ap_lo)
-a.append(ch)
-a.append(gl)
-a.append(sm)
-a.append(al)
-a.append(act)
-
-
-
-def load():
+def loading():
     with open('heart_desease_model.pcl', 'rb') as fid:
-        return pickle.load(fid)
+        return load(fid)
 
-
-model = load()
+model = loading()
 y_pr = model.predict_proba([[age, gender, height, weight, ap_hi, ap_lo, ch, gl, sm, al, act]])[:, 1]
 st.write(f'Вероятность сердечно-сосудистого заболевания составляет: {round(float(y_pr), 3)}')
 
