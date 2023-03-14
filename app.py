@@ -1,4 +1,4 @@
-module.__dict__ = 'requirments.txt'
+module = 'requirments.txt'
 from catboost import CatBoostClassifier
 from pickle import load
 import streamlit as st
