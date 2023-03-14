@@ -1,5 +1,4 @@
-
-from pickle import load
+import pickle
 import streamlit as st
 
 
@@ -56,7 +55,7 @@ else:
 
 def loading():
     with open('./heart_desease_model.pcl', 'rb') as fid:
-        return load(fid)
+        return pickle.load(fid)
 
 model = loading()
 y_pr = model.predict_proba([[age, gender, height, weight, ap_hi, ap_lo, ch, gl, sm, al, act]])[:, 1]
