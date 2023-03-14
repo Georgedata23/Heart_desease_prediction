@@ -1,5 +1,6 @@
 import pickle
 import streamlit as st
+import os
 
 
 
@@ -53,11 +54,9 @@ else:
     act = 0
 
 
-def loading():
-    with open("./heart_desease_model.pcl", "rb") as fid:
-        return pickle.load(fid)
 
-model = loading()
+
+model = pickle.load(os.path.dirname(__file__) + '/heart_desease_model.pcl'
 y_pr = model.predict_proba([[age, gender, height, weight, ap_hi, ap_lo, ch, gl, sm, al, act]])[:, 1]
 st.write(f'Вероятность сердечно-сосудистого заболевания составляет: {round(float(y_pr), 3)}')
 
