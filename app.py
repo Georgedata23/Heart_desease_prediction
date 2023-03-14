@@ -1,3 +1,4 @@
+import sklearn
 from pickle import load
 import streamlit as st
 
