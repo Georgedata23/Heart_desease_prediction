@@ -1,5 +1,5 @@
 
-import scikit-learn
+import scikit_learn
 import pickle
 import streamlit as st
 
