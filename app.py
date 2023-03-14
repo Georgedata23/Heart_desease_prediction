@@ -1,6 +1,6 @@
-module = 'requirments.txt'
-from catboost import CatBoostClassifier
-from pickle import load
+
+import pandas as pd
+import pickle
 import streamlit as st
 
 
